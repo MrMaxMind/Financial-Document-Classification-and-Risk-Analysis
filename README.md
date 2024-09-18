@@ -32,6 +32,7 @@ This project leverages a pre-trained BERT model fine-tuned for document classifi
 - `templates/index.html`: Frontend HTML for the user interface.
 - `static/style.css`: Custom CSS for styling the web interface.
 - `static/script.js`: JavaScript for dynamic frontend behavior.
+- `financial_model_training.py` : Python Script to train **BERT Model** and save it.
 - `requirements.txt`: Python dependencies required to run the project.
 - `Dockerfile`: Configuration for containerizing the project.
 
