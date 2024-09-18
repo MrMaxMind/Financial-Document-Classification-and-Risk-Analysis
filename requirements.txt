@@ -1,0 +1,7 @@
+Flask
+torch
+transformers
+PyPDF2
+requests
+pdfminer.six
+

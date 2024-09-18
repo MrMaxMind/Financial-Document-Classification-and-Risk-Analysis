@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Financial Risk Classification</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <h1>Financial Risk Classification</h1>
+
+    <form id="input-form" method="POST" enctype="multipart/form-data">
+        <label>Select Input Type:</label><br>
+        <input type="radio" id="stock_option" name="input_type" value="stock" checked> Stock Symbol<br>
+        <input type="radio" id="file_option" name="input_type" value="file"> Text or PDF File<br><br>
+
+        <div id="stock-input">
+            <label for="stock_symbol">Enter Stock Symbol:</label><br>
+            <input type="text" id="stock_symbol" name="stock_symbol"><br><br>
+        </div>
+
+        <div id="file-input" style="display: none;">
+            <label for="file">Upload Text or PDF File:</label><br>
+            <input type="file" id="file" name="file"><br><br>
+        </div>
+
+        <button type="submit">Classify</button>
+    </form>
+
+    <div id="result"></div>
+    <div id="key-stats"></div>
+
+    <script>
+        // Toggle between stock symbol and file input
+        document.getElementById('stock_option').addEventListener('change', function() {
+            document.getElementById('stock-input').style.display = 'block';
+            document.getElementById('file-input').style.display = 'none';
+        });
+
+        document.getElementById('file_option').addEventListener('change', function() {
+            document.getElementById('stock-input').style.display = 'none';
+            document.getElementById('file-input').style.display = 'block';
+        });
+
+        // Handle form submission
+        document.getElementById('input-form').onsubmit = async function(event) {
+            event.preventDefault();
+            const formData = new FormData(this);
+            const response = await fetch('/upload', {
+                method: 'POST',
+                body: formData
+            });
+            const data = await response.json();
+            document.getElementById('result').innerText = `Classification: ${data.classification_label}`;
+            if (data.key_stats) {
+                let statsHtml = '<h3>Key Stats:</h3><ul>';
+                for (let [key, value] of Object.entries(data.key_stats)) {
+                    statsHtml += `<li>${key}: ${value}</li>`;
+                }
+                statsHtml += '</ul>';
+                document.getElementById('key-stats').innerHTML = statsHtml;
+            }
+        }
+    </script>
+</body>
+</html>
