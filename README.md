@@ -5,7 +5,7 @@ Welcome to the Financial Document Classification & Risk Analysis repository. Thi
 ---
 
 <div align="center">
-  <img src="./financial_risk.png" alt="Financial Risk Analysis Image" style="border:none;">
+  <img src="./financial_risk.jpg" alt="Financial Risk Analysis Image" style="border:none;">
 </div>
 
 ## Overview
