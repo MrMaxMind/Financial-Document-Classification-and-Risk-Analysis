@@ -104,6 +104,7 @@ Train the **BERT Model** using the provided Python Script `financial_model_train
 ---
 
 ## 🤝 **Contributing**
+
 If you have suggestions or improvements, feel free to open an issue or create a pull request.
 
 ---
