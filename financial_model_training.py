@@ -3,7 +3,7 @@ from datasets import load_dataset
 import torch
 
 # Check if CUDA (GPU) is available
-device = torch.device('cuda:2' if torch.cuda.is_available() else 'cpu')
+device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 
 # Load the Financial PhraseBank dataset with a specific configuration ('sentences_allagree')
 dataset = load_dataset('financial_phrasebank', 'sentences_allagree', split='train', trust_remote_code=True)
