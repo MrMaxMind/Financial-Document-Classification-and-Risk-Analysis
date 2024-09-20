@@ -1,4 +1,4 @@
-# Financial Document Classification & Risk Analysis
+# **Financial Document Classification & Risk Analysis**
 
 Welcome to the Financial Document Classification & Risk Analysis repository. This project is designed to classify financial documents or stock symbol-based data into different risk categories using a fine-tuned BERT model. Below are instructions for setting up the project, its features, and deployment on Render using Docker.
 
@@ -8,13 +8,13 @@ Welcome to the Financial Document Classification & Risk Analysis repository. Thi
   <img src="./financial_risk.jpg" alt="Financial Risk Analysis Image" style="border:none;">
 </div>
 
-## Overview
+## 🚀 **Overview**
 
 This project leverages a pre-trained BERT model fine-tuned for document classification. The model is capable of classifying financial documents or stock symbol-related data into risk categories, providing key insights into the classification. The web app includes a Flask backend, an interactive frontend, and can be deployed using Docker on Render.
 
 ---
 
-## Features
+## ✨ **Features**
 
 - **Text Extraction**: Extracts financial data from stock symbols or uploaded PDF/TXT files.
 - **Risk Classification**: Classifies financial documents or data into predefined risk categories using a fine-tuned BERT model.
@@ -25,7 +25,7 @@ This project leverages a pre-trained BERT model fine-tuned for document classifi
 
 ---
 
-## Contents
+## 📂 **Contents**
 
 - `app.py`: Flask backend to handle user inputs, API requests, and return classification results.
 - `models/`: Contains `config.json` and `model.safetensors` for the BERT model.
@@ -38,7 +38,7 @@ This project leverages a pre-trained BERT model fine-tuned for document classifi
 
 ---
 
-## Getting Started
+## 🛠️  **Getting Started**
 
 1. **Clone the Repository**:
    ```bash
@@ -62,7 +62,7 @@ This project leverages a pre-trained BERT model fine-tuned for document classifi
 
 ---
 
-## Deployment Instructions
+## 🚢 **Deployment Instructions**
 
 ### 1. Model Training: 
 
@@ -81,7 +81,7 @@ Train the **BERT Model** using the provided Python Script `financial_model_train
 
 ---
 
-## Key Insights
+## 🔍 **Key Insights**
 
 - Successfully fine-tuned a BERT model for financial document classification.
 - Supports both file uploads and stock symbol input to classify risk.
@@ -90,7 +90,7 @@ Train the **BERT Model** using the provided Python Script `financial_model_train
 
 ---
 
-## Tools and Libraries
+## 🛠️ **Tools and Libraries**
 
 - `Flask`: For the web backend.
 - `PyTorch`: For loading and running the BERT model.
@@ -101,10 +101,12 @@ Train the **BERT Model** using the provided Python Script `financial_model_train
 
 ---
 
-## Contributing
+## 🤝 **Contributing**
 If you have suggestions or improvements, feel free to open an issue or create a pull request.
 
 ---
 
-## *Thank you for visiting! If you find this project useful, please consider starring the repository. Happy coding!*
+## ⭐ **Thank You!**
+
+Thank you for visiting! If you find this project useful, please consider starring the repository. Happy coding!
 
