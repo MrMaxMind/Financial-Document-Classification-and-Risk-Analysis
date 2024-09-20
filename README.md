@@ -44,8 +44,8 @@ This project leverages a pre-trained BERT model fine-tuned for document classifi
 
 1. **Clone the Repository**:
    ```bash
-   git clone https://github.com/your_username/Financial-Document-Classification.git
-   cd Financial-Document-Classification
+   git clone https://github.com/your_username/Financial-Document-Classification-and-Risk-Analysis.git
+   cd Financial-Document-Classification-and-Risk-Analysis
 2. **Install the required packages**:
    Ensure you have Python 3.x installed. Install dependencies by running:
    ```bash
