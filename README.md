@@ -1,6 +1,6 @@
 # **Financial Document Classification & Risk Analysis**
 
-Welcome to the Financial Document Classification & Risk Analysis repository. This project is designed to classify financial documents or stock symbol-based data into different risk categories using a fine-tuned BERT model. Below are instructions for setting up the project, its features, and deployment on Render using Docker.
+Welcome to the Financial Document Classification & Risk Analysis repository. This project is designed to classify financial documents or stock symbol-based data into different risk categories using a fine-tuned BERT model.
 
 ---
 
@@ -12,8 +12,7 @@ Welcome to the Financial Document Classification & Risk Analysis repository. Thi
 
 ## 🚀 **Overview**
 
-This project leverages a pre-trained BERT model fine-tuned for document classification. The model is capable of classifying financial documents or stock symbol-related data into risk categories, providing key insights into the classification. The web app includes a Flask backend, an interactive frontend, and can be deployed using Docker on Render.
-
+This project leverages a pre-trained BERT model fine-tuned for document classification. The model is capable of classifying financial documents or stock symbol-related data into risk categories, providing key insights into the classification. The web app includes a Flask backend, an interactive frontend.
 ---
 
 ## ✨ **Features**
@@ -22,7 +21,6 @@ This project leverages a pre-trained BERT model fine-tuned for document classifi
 - **Risk Classification**: Classifies financial documents or data into predefined risk categories using a fine-tuned BERT model.
 - **Financial Data Fetching**: Automatically fetches data related to the stock symbol from a free API.
 - **User Interface**: Interactive web interface to input stock symbols, text, or upload financial documents.
-- **Render Deployment**: Easily deployable on Render using Docker.
 - **Key Insights**: Displays key statistics and features that influence the risk classification.
 
 ---
@@ -61,25 +59,6 @@ This project leverages a pre-trained BERT model fine-tuned for document classifi
    ```bash
    python3 app.py
    Open your web browser and go to `http://127.0.0.1:5000/`
-
----
-
-## 🚢 **Deployment Instructions**
-
-### 1. Model Training: 
-
-Train the **BERT Model** using the provided Python Script `financial_model_training.py` and save the trained model into `models` directory.
-
-### 2. Deploy the App on Render:
-
-- Push your project to GitHub.
-- Create a new web service on Render, connecting it to your GitHub repository.
-- Ensure app.py is set as the entry point and requirements.txt includes all dependencies.
-
-### 3. Configure the Environment:
-
-- Add the necessary environment variables if required.
-- Deploy the app, and Render will automatically start your service.
 
 ---
 
