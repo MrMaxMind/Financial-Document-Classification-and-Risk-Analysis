@@ -63,12 +63,20 @@ This project leverages a pre-trained BERT model fine-tuned for document classifi
 
 ---
 
+## 📈 **Model Training and Development**
+
+- The `financial_model_training.py`script is used to train and fine-tune the **BERT Model** for financial document classification and risk analysis.
+- The model employs BERT embeddings to analyze financial documents or stock symbol data, effectively classifying them into predefined risk categories.
+- The model files (`model.safetensors` and `config.json`) are pre-trained and loaded during inference to ensure efficient risk classification.
+
+---
+
 ## 🔍 **Key Insights**
 
 - Successfully fine-tuned a BERT model for financial document classification.
 - Supports both file uploads and stock symbol input to classify risk.
 - Shows key statistics and reasoning behind the risk classification for transparency.
-- Deployed on Render using Docker for cloud scalability.
+- The application is designed to be deployed in a containerized environment using Docker.
 
 ---
 
