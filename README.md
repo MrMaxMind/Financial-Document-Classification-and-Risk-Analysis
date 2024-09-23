@@ -13,6 +13,7 @@ Welcome to the Financial Document Classification & Risk Analysis repository. Thi
 ## 🚀 **Overview**
 
 This project leverages a pre-trained BERT model fine-tuned for document classification. The model is capable of classifying financial documents or stock symbol-related data into risk categories, providing key insights into the classification. The web app includes a Flask backend, an interactive frontend.
+
 ---
 
 ## ✨ **Features**
